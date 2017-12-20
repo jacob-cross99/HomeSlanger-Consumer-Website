@@ -1,0 +1,22 @@
+.login {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  .login form {
+    max-width: 330px;
+    padding: 15px;
+    margin: 30px auto; }
+    .login form input:not([type="password"]) {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    .login form .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px; }
+    .login form .btn-primary {
+      margin-top: 15px; }

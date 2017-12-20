@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI" !important;
+}
+
+$body-bg: #EAEAEA;
+$body-color: #231F20;
+$theme-colors: (
+  "primary": #AD974F
+);
+
+*:focus {
+  outline: none;
+}
+
+.nav-item.active > .nav-link {
+  color: #AD974F !important;
+}
+
+.padding-5 {
+  padding: 2% 5% 0 5%;
+}
+
+.primary {
+  color: map-get($theme-colors, 'primary');
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";

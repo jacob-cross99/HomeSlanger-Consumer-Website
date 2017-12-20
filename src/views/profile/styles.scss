@@ -1,0 +1,69 @@
+@import '../../global.scss';
+
+.profile {
+  margin-top: 2%;
+
+  .details {
+    text-align: center;
+    padding: 25px 5px 25px 5px;
+    background: #FFF;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+
+    img {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      border: 1px solid map-get($theme-colors, 'primary');
+    }
+
+    .name {
+      color: map-get($theme-colors, 'primary');
+    }
+  }
+
+  .actions {
+    border: 1px solid lightgrey;
+
+    .grey-line {
+      width: 90%;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    .action {
+      font-size: 16px;
+      padding: 15px 15px 15px 15px;
+      background: #FFFFFF;
+
+      i:first-child {
+        font-size: 24px;
+      }
+
+      i:last-child {
+        font-size: 18px;
+        color: lightgrey;
+      }
+
+      .title {
+        color: darkgrey;
+        margin-left: 10px;
+      }
+
+      .cool-purple {
+        color: #b85aff;
+      }
+
+      .cool-red {
+        color: #ff5a5a;
+      }
+
+      .cool-green {
+        color: lightgreen;
+      }
+    }
+
+    .action:hover {
+      background: #F2F2F2;
+    }
+  }
+}

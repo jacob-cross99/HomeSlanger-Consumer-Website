@@ -1,0 +1,31 @@
+.register {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .form {
+    max-width: 330px;
+    padding: 15px;
+    margin: 30px auto;
+
+    input:not([type="password"]) {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      margin-top: 15px;
+    }
+  }
+}
