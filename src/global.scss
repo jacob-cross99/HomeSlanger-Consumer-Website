@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI" !important;
+  font-family: 'Gotham Rounded';
 }
 
-$body-bg: #EAEAEA;
+$body-bg: #FFFFFF;
 $body-color: #231F20;
 $theme-colors: (
   "primary": #AD974F

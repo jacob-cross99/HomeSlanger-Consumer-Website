@@ -1,69 +1,76 @@
 @import '../../global.scss';
 
 .profile {
-  margin-top: 2%;
+	.image-gallery-image {
+		width: 100%;
+		height: 46vh;
+	}
 
-  .details {
-    text-align: center;
-    padding: 25px 5px 25px 5px;
-    background: #FFF;
-    border: 1px solid lightgrey;
-    border-bottom: none;
+	.body {
+		padding-top: 0.5em;
+		padding-left: 20px;
+		padding-right: 20px;
 
-    img {
-      width: 128px;
-      height: 128px;
-      border-radius: 50%;
-      border: 1px solid map-get($theme-colors, 'primary');
-    }
+		.name {
+			width: 100%;
+			font-size: 1.3em;
+			font-family: 'Gotham Rounded Bold';
+			color: #464646;
+			margin-bottom: 4px;
+		}
 
-    .name {
-      color: map-get($theme-colors, 'primary');
-    }
-  }
+		.location {
+			width: 100%;
+			color: #a9a9a9;
+			margin-bottom: 10px;
+		}
 
-  .actions {
-    border: 1px solid lightgrey;
+		.bio {
+			width: 100%;
+			text-align: justify;
+			color: #7d7d7d;
+			font-size: 1em;
+			margin-bottom: 30px;
+		}
+	}
 
-    .grey-line {
-      width: 90%;
-      border-bottom: 1px solid lightgrey;
-    }
+	.interests {	
+		.header {
+			i {
+				margin-right: 3px;
+			}
 
-    .action {
-      font-size: 16px;
-      padding: 15px 15px 15px 15px;
-      background: #FFFFFF;
+			width: 100vw;
+			height: 38px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			padding-left: 10px;
+			padding-right: 10px;
+			background: #f7f7f7;
+			font-size: 1.5em;
+			display: block;
+		}
 
-      i:first-child {
-        font-size: 24px;
-      }
+		.list {
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			height: 80px;
+			overflow-x: auto;
 
-      i:last-child {
-        font-size: 18px;
-        color: lightgrey;
-      }
+			.interest {
+				display: inline-block;
+				margin-right: 25px;
+				.logo {
+					width: 52px;
+					height: 52px;
+					border-radius: 50%;
+				}
 
-      .title {
-        color: darkgrey;
-        margin-left: 10px;
-      }
-
-      .cool-purple {
-        color: #b85aff;
-      }
-
-      .cool-red {
-        color: #ff5a5a;
-      }
-
-      .cool-green {
-        color: lightgreen;
-      }
-    }
-
-    .action:hover {
-      background: #F2F2F2;
-    }
-  }
+				.name {
+					text-align: center;
+				}
+			}
+		}
+	}
 }

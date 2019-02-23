@@ -1,0 +1,71 @@
+.match {
+	.stack {
+    width: 90%; 
+    height: 400px; 
+    position: absolute; 
+    top: 20px; 
+    left: 35.5%;
+    margin-left: -100px;
+    border-radius: 10px;
+  
+    .card {
+      width: 90%;
+      height: 400px;
+      list-style: none;
+      background: #fff;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 2px rgba(0,0,0,.2), 1px 1px 1px rgba(0,0,0,.2);
+      line-height: 300px;
+      text-align: center;
+      font-size: 100px;
+      border: 10px solid #ECECEC;
+      box-sizing: border-box;
+      cursor: default;
+      font-family: 'Gotham Rounded Bold';
+  
+      .photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 350px;
+      }
+
+      .name-age {
+        position: absolute;
+        top: 215px;
+        left: 10px;
+        font-size: 18px;
+        height: 0px;
+  
+      }
+
+      .distance {
+        position: absolute;
+        top: 215px;
+        right: 5px;
+        font-size: 16px;
+        height: 0;
+      }
+
+      .interests {
+        position: absolute;
+        top: 215px;
+        right: 80px;
+        font-size: 16px;
+        height: 0;
+      }
+    }
+
+    .in-deck:nth-child(3) {
+      top: 2px; transform: translate(2px, 2px) rotate(0.4deg);
+    }
+  
+    .in-deck:nth-child(2) {
+      top: 4px; transform: translate(-4px, -2px) rotate(-1deg);
+    }
+  }
+}

@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
-
+import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
 
-import './global.css';
+import Match from './views/match'
+import Matches from './views/matches'
+import Profile from './views/profile'
 
-import Buy from './views/buy';
-import Login from './views/login';
-import Profile from './views/profile';
-import Properties from './views/properties';
-import Property from './views/property';
-import Register from './views/register';
-
-import Navbar from './components/navbar';
-
-import './global.css';
+import './global.css'
 
 class App extends Component {
   componentDidMount() {
@@ -26,19 +18,14 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Navbar />
-
-          <Route exact path="/" component={ Buy } />
-          <Route exact path="/register" component={ Register } />
-          <Route exact path="/login" component={ Login } />
-          <Route exact path="/profile" component={ Profile } />
-          <Route exact path="/properties" component={ Properties } />
-          <Route path="/properties/:mlsId" component={ Property } />
+        <div className="container app">
+          <Route exact path="/match" component={ Match } />
+          <Route exact path="/matches" component={ Matches } />
+          <Route exact path="/profiles/:id" component={ Profile } />
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App
